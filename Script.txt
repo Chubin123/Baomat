@@ -60,27 +60,10 @@ local ChromaGuns = Toggles:addSection("Chroma Guns")
 local Trading = Toggles:addSection("Trading")
 local Traps = Toggles:addSection("Traps")
 
-local SprayPaint = R3TH:addPage("Spray Paint", 10709776050)
-local LoopTarget = SprayPaint:addSection("Loop Target")
-local FE = SprayPaint:addSection("FE")
-local Antijoin = SprayPaint:addSection("Anti Join")
-
-local Sniper0 = R3TH:addPage("Sniper", 10734977012)
-local Sniper = Sniper0:addSection("Sniper")
-
 local Settings0 = R3TH:addPage("Settings", 10734950309) -- moved to the top for mobile users
 local Settings = Settings0:addSection("Settings")
 local Theme = Settings0:addSection("Theme")
 local Credits = Settings0:addSection("Credits")
-
-local Scripts = R3TH:addPage("Scripts", 10723356507)
-local R3THPRIVV1 = Scripts:addSection("Thanh Hub V1")
-
-local FAQ0 = R3TH:addPage("FAQ", 10723435515)
-local FAQ = FAQ0:addSection("FAQ")
-
-local Keybinds = R3TH:addPage("Keybinds", 10723416765)
-local UniversalKeybind = Keybinds:addSection("Universal")
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -139,7 +122,7 @@ function ToggleUI()
     Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
     Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
     Button.Font = Enum.Font.FredokaOne
-    Button.Text = "T"
+    Button.Text = "rbxassetid://17716837226"
     Button.TextColor3 = Color3.fromRGB(255, 255, 255)
     Button.TextScaled = true
     Button.TextSize = 33.000
@@ -1838,6 +1821,12 @@ Main:addButton("Nhắn tên của murder và sheriff", function()
     SayMessageRequest:FireServer("Murderer Is: " .. Murder, "normalchat")
     SayMessageRequest:FireServer("Sheriff Is: " .. Sheriff, "normalchat")
 end)
+Main:addToggle("vô hạn Prank Bomb", fal
+				if D and (D.Character and D.Character:FindFirstChild("FakeBomb")) then
+					(getsenv(D.Character.FakeBomb.Client)).firerate = 22
+				end
+			end
+		end)
  
 Main:addToggle("Vô hiệu hóa súng (ko thể vô hiệu hóa chính mình)", false, function(Value)
     ChangeAutoBreakGun = Value
