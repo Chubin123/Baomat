@@ -24,7 +24,7 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/Venyx%20UI%20Lib/Source.lua"))()
-local R3TH = library.new("Thanh Hub | " .. R3THEXECUTOR .. " ")
+local R3TH = library.new("Thanh Hub | Murder Mystery 2" .. R3THEXECUTOR .. " ")
 
 local Themes = {
     Background = Color3.fromRGB(24, 24, 24),
@@ -35,32 +35,41 @@ local Themes = {
     TextColor = Color3.fromRGB(255, 255, 255)
 }
 
-local Universal = R3TH:addPage("Universal", 10734923549)
+local Universal = R3TH:addPage("Universal", 17716837226)
 local Player = Universal:addSection("Player")
 local ESP = Universal:addSection("ESP")
 local Target = Universal:addSection("Target")
 local Anti = Universal:addSection("Anti")
 local Server = Universal:addSection("Server")
 
-local Combat = R3TH:addPage("Combat", 10734975692)
+local Combat = R3TH:addPage("Combat", 17716837226)
 local Murderer = Combat:addSection("Murderer")
 local Sheriff = Combat:addSection("Sheriff")
 local Innocent = Combat:addSection("Innocent")
 
-local Main0 = R3TH:addPage("Main", 10709782154)
+local Main0 = R3TH:addPage("Main", 17716837226)
 local Teleports = Main0:addSection("Teleports")
 local Chams = Main0:addSection("Chams")
 local Main = Main0:addSection("Main")
 local Misc = Main0:addSection("Misc")
 
-local Toggles = R3TH:addPage("Toggles", 10734984834)
+local Toggles = R3TH:addPage("Toggles", 17716837226)
 local World = Toggles:addSection("World")
 local Visual = Toggles:addSection("Visual")
 local ChromaGuns = Toggles:addSection("Chroma Guns")
 local Trading = Toggles:addSection("Trading")
 local Traps = Toggles:addSection("Traps")
 
-local Settings0 = R3TH:addPage("Settings", 10734950309) -- moved to the top for mobile users
+local SprayPaint = R3TH:addPage("Spray Paint", 17716837226)
+local LoopTarget = SprayPaint:addSection("Loop Target")
+local FE = SprayPaint:addSection("FE")
+local Antijoin = SprayPaint:addSection("Anti Join")
+
+local Target0 = R3TH:addPage("Target", 17716837226)
+local Sniper = Target0:addSection("Sniper")
+local Webhook = Target0:addSection("Webhook")
+
+local Settings0 = R3TH:addPage("Settings", 17716837226) -- moved to the top for mobile users
 local Settings = Settings0:addSection("Settings")
 local Theme = Settings0:addSection("Theme")
 local Credits = Settings0:addSection("Credits")
@@ -122,8 +131,7 @@ function ToggleUI()
     Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
     Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
     Button.Font = Enum.Font.FredokaOne
-    Button.Text = "Nút"
-    Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Button.Text = "rbxassetid://17716837226"
     Button.TextScaled = true
     Button.TextSize = 33.000
     Button.TextWrapped = true
