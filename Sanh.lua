@@ -2203,5 +2203,5 @@ do
 	end
 end
 
-print("[ " .. Key .. " ]: Venyx UI Fixed and Improved by Pethicial")
+print("Venyx UI Fixed and Improved by Pethicial")
 return library
