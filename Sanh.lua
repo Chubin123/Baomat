@@ -1,7 +1,3 @@
-if Key == nil then
-    Key = "Thanh Hub"
-end
-
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
